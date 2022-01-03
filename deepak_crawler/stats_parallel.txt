@@ -1,0 +1,76 @@
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 90; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;18; 12; 15
+Ram; Gupta; 54880; 63; 471; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2935; 2874; 3001 ;2719; 2748; 2080
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 90; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;18; 12; 15
+Ram; Gupta; 54880; 63; 471; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2935; 2874; 3001 ;2719; 2748; 2080
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 90; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;18; 12; 15
+Ram; Gupta; 54880; 63; 471; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2935; 2874; 3001 ;2719; 2748; 2080
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 90; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;18; 12; 15
+Ram; Gupta; 54880; 63; 471; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2935; 2874; 3001 ;2719; 2748; 2080
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 90; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;18; 12; 15
+Ram; Gupta; 54895; 63; 471; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2936; 2876; 2998 ;2720; 2750; 2106
+Jyoti; 
+Jyoti; 
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155
+Jyoti; 
+Jyoti; 
+Jyoti; Mahajan; 91; 4; 3; Antioxidant, Anticancer, ; 8; 11; 12 ;19; 12; 15
+Ram; Gupta; 54938; 63; 472; Biofuel, Battery, Solar fuel, Supercritical, Nanomedicine, ; 2903; 2876; 2999 ;2723; 2752; 2155

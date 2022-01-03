@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="{% static 'css/profile.css' %}" rel="stylesheet" />
+
+</head>
+<body>
+<div class="container">
+    <div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic">
+					<img src={{img_link}} class="img-responsive" alt="{% static '/css/img/default_pfp.png' %}">
+				</div>
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						{{name}}
+					</div>
+				</div>
+				<!-- END SIDEBAR USER TITLE -->
+				<!-- SIDEBAR BUTTONS -->
+				<!-- END SIDEBAR BUTTONS -->
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul class="nav">
+						<li class="active">
+							<a href="#">
+							<i class="glyphicon glyphicon-home"></i>
+							Overview </a>
+						</li>
+						<li>
+							<a href="#">
+							<i class="glyphicon glyphicon-user"></i>
+							Account Settings </a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<i class="glyphicon glyphicon-ok"></i>
+							Tasks </a>
+						</li>
+						<li>
+							<a href="#">
+							<i class="glyphicon glyphicon-flag"></i>
+							Help </a>
+						</li>
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+		</div>
+		<div class="col-md-9">
+            <div class="profile-content">
+			   <h3>Email -> {{email}}</h3>
+			   <h3>Affiliation -> {{affiliation}}</h3>
+			   <h3>Citations -> {{citations}}</h3>
+
+				<div class="profile-userbuttons">
+					<button type="button" onclick="window.location.href='sort_by_date/'" class="btn btn-success btn-sm">sort by date</button>
+				</div>
+				{%for paper in list %}
+					<h3>{{paper}}</h3>
+				{% endfor %}
+            </div>
+		</div>
+	</div>
+</div>
+<center>
+</center>
+<br>
+<br>
+</body>
+</html>

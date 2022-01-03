@@ -1,0 +1,232 @@
+1640765495591	geckodriver	INFO	Listening on 127.0.0.1:55901
+1640765495595	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53349" "-no-remote" "-profile" "/tmp/rust_mozprofilel1TGWH"
+
+(firefox:6217): Gdk-WARNING **: 13:41:35.634: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:6217): Gdk-WARNING **: 13:41:35.679: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:6217): Gdk-WARNING **: 13:41:35.679: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(firefox:6217): Gdk-WARNING **: 13:41:35.679: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(firefox:6217): Gdk-WARNING **: 13:41:35.679: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640765496127	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilel1TGWH/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53349/devtools/browser/e898992d-52b0-4ec7-94f7-2fdbbb5fd172
+1640765497294	Marionette	INFO	Listening on port 40843
+1640765497324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640765523098	geckodriver	INFO	Listening on 127.0.0.1:38183
+1640765523103	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47249" "-no-remote" "-profile" "/tmp/rust_mozprofileKcYS7O"
+
+(firefox:6597): Gdk-WARNING **: 13:42:03.135: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:6597): Gdk-WARNING **: 13:42:03.176: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:6597): Gdk-WARNING **: 13:42:03.176: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(firefox:6597): Gdk-WARNING **: 13:42:03.176: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(firefox:6597): Gdk-WARNING **: 13:42:03.177: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640765523568	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKcYS7O/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47249/devtools/browser/53e4e55d-f04b-47ff-b743-d0cfafa8c119
+1640765524522	Marionette	INFO	Listening on port 39387
+1640765524639	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640765526192	Marionette	INFO	Stopped listening on port 40843
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1640765537870	geckodriver	INFO	Listening on 127.0.0.1:59455
+1640765537875	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37829" "-no-remote" "-profile" "/tmp/rust_mozprofilecr72cK"
+
+(firefox:7003): Gdk-WARNING **: 13:42:17.909: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:7003): Gdk-WARNING **: 13:42:17.952: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:7003): Gdk-WARNING **: 13:42:17.952: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(firefox:7003): Gdk-WARNING **: 13:42:17.952: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(firefox:7003): Gdk-WARNING **: 13:42:17.953: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640765538345	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecr72cK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37829/devtools/browser/1d055cdc-10ec-4db0-b9f7-c28eab808911
+1640765539711	Marionette	INFO	Listening on port 34237
+1640765539810	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640765553650	Marionette	INFO	Stopped listening on port 34237
+1640765639046	geckodriver	INFO	Listening on 127.0.0.1:38535
+1640765639050	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35997" "-no-remote" "-profile" "/tmp/rust_mozprofilerCEMgd"
+
+(firefox:7519): Gdk-WARNING **: 13:43:59.082: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:7519): Gdk-WARNING **: 13:43:59.130: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:7519): Gdk-WARNING **: 13:43:59.130: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(firefox:7519): Gdk-WARNING **: 13:43:59.130: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(firefox:7519): Gdk-WARNING **: 13:43:59.131: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640765639521	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerCEMgd/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35997/devtools/browser/e057f606-dda1-4599-9dbd-466215d1bad6
+1640765640687	Marionette	INFO	Listening on port 39023
+1640765640766	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640765654224	Marionette	INFO	Stopped listening on port 39023
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640765657017	geckodriver	INFO	Listening on 127.0.0.1:44781
+1640765657021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40071" "-no-remote" "-profile" "/tmp/rust_mozprofilejiU1io"
+
+(firefox:7919): Gdk-WARNING **: 13:44:17.054: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:7919): Gdk-WARNING **: 13:44:17.110: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:7919): Gdk-WARNING **: 13:44:17.110: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(firefox:7919): Gdk-WARNING **: 13:44:17.110: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(firefox:7919): Gdk-WARNING **: 13:44:17.111: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640765657501	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejiU1io/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40071/devtools/browser/23b24401-eec5-4aee-99fc-18c07692a5a4
+1640765658487	Marionette	INFO	Listening on port 45475
+1640765658539	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640765664658	Marionette	INFO	Stopped listening on port 45475
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1640765770889	geckodriver	INFO	Listening on 127.0.0.1:53667
+1640765770893	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "53523" "-no-remote" "-profile" "/tmp/rust_mozprofileLVTm3I"
+*** You are running in headless mode.
+1640765771156	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLVTm3I/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53523/devtools/browser/7b3e1004-f61c-4f34-a0fc-0af012ed2182
+1640765772090	Marionette	INFO	Listening on port 36301
+1640765772112	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640765791892	geckodriver	INFO	Listening on 127.0.0.1:54571
+1640765791897	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "46307" "-no-remote" "-profile" "/tmp/rust_mozprofile6zyJH9"
+*** You are running in headless mode.
+1640765792165	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6zyJH9/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46307/devtools/browser/70f00b27-995e-4921-b0aa-a02ef9c796a3
+1640765793192	Marionette	INFO	Listening on port 38037
+1640765793245	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640765809096	Marionette	INFO	Stopped listening on port 38037
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1640768984631	geckodriver	INFO	Listening on 127.0.0.1:51679
+1640768984636	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49943" "-no-remote" "-profile" "/tmp/rust_mozprofileHfb49I"
+
+(firefox:19426): Gdk-WARNING **: 14:39:44.669: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:19426): Gdk-WARNING **: 14:39:44.712: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:19426): Gdk-WARNING **: 14:39:44.712: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(firefox:19426): Gdk-WARNING **: 14:39:44.712: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(firefox:19426): Gdk-WARNING **: 14:39:44.712: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640768985104	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHfb49I/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49943/devtools/browser/0068aa22-663e-432f-af76-cee53b656a1a
+1640768986289	Marionette	INFO	Listening on port 39185
+1640768986360	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640768991204	Marionette	INFO	Stopped listening on port 39185
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640768999223	geckodriver::marionette	ERROR	Failed to close browser connection: Transport endpoint is not connected (os error 107)
+1640769053982	geckodriver	INFO	Listening on 127.0.0.1:34243
+1640769053987	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52689" "-no-remote" "-profile" "/tmp/rust_mozprofile4QcS4F"
+
+(firefox:20141): Gdk-WARNING **: 14:40:54.022: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:20141): Gdk-WARNING **: 14:40:54.064: Cannot transform xsetting gtk-xft-dpi of type gchararray to type gint
+
+
+(firefox:20141): Gdk-WARNING **: 14:40:54.064: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+
+(firefox:20141): Gdk-WARNING **: 14:40:54.064: Cannot transform xsetting gtk-enable-event-sounds of type gchararray to type gboolean
+
+
+(firefox:20141): Gdk-WARNING **: 14:40:54.065: Cannot transform xsetting gtk-enable-input-feedback-sounds of type gchararray to type gboolean
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640769054450	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4QcS4F/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52689/devtools/browser/0f3ca854-c1ff-4161-89d0-cc95f9d614a0
+1640769055504	Marionette	INFO	Listening on port 39847
+1640769055610	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640769057069	Marionette	INFO	Stopped listening on port 39847
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1640769079723	geckodriver	INFO	Listening on 127.0.0.1:41669
+1640769079728	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "45033" "-no-remote" "-profile" "/tmp/rust_mozprofilePkdw03"
+*** You are running in headless mode.
+1640769080008	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePkdw03/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45033/devtools/browser/12eb9b24-5029-40a8-a926-c839e3f385d2
+1640769080965	Marionette	INFO	Listening on port 44153
+1640769081048	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640769094685	Marionette	INFO	Stopped listening on port 44153
+1640769246726	geckodriver	INFO	Listening on 127.0.0.1:48207
+1640769246730	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "53667" "-no-remote" "-profile" "/tmp/rust_mozprofileAllBJR"
+*** You are running in headless mode.
+1640769247005	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAllBJR/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53667/devtools/browser/37c20a71-336b-4494-9cd4-79c95d5fb90e
+1640769247883	Marionette	INFO	Listening on port 33063
+1640769247947	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640769261462	Marionette	INFO	Stopped listening on port 33063
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
