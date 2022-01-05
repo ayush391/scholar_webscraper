@@ -15,62 +15,44 @@
 <body>
 <div class="container">
     <div class="row profile">
-		<div class="col-md-3">
+		<div class="col-md-12">
 			<div class="profile-sidebar">
-				<!-- SIDEBAR USERPIC -->
 				<div class="profile-userpic">
 					<img src={{img_link}} class="img-responsive" alt="{% static '/css/img/default_pfp.png' %}">
 				</div>
-				<!-- END SIDEBAR USERPIC -->
-				<!-- SIDEBAR USER TITLE -->
-				<div class="profile-usertitle">
+				
+				<div class="profile-usertitle text-center">
 					<div class="profile-usertitle-name">
 						{{name}}
 					</div>
 				</div>
-				<!-- END SIDEBAR USER TITLE -->
-				<!-- SIDEBAR BUTTONS -->
-				<!-- END SIDEBAR BUTTONS -->
-				<!-- SIDEBAR MENU -->
-				<div class="profile-usermenu">
-					<ul class="nav">
-						<li class="active">
-							<a href="#">
-							<i class="glyphicon glyphicon-home"></i>
-							Overview </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-user"></i>
-							Account Settings </a>
-						</li>
-						<li>
-							<a href="#" target="_blank">
-							<i class="glyphicon glyphicon-ok"></i>
-							Tasks </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-flag"></i>
-							Help </a>
-						</li>
-					</ul>
-				</div>
-				<!-- END MENU -->
 			</div>
-		</div>
-		<div class="col-md-9">
             <div class="profile-content">
-			   <h3>Email -> {{email}}</h3>
-			   <h3>Affiliation -> {{affiliation}}</h3>
-			   <h3>Citations -> {{citations}}</h3>
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="row justify-content-center">
+							<span class="glyphicon glyphicon-envelope"  style="font-size: 18px;">Email: {{email}}</span>
+
+						</div>
+						<div class="row justify-content-center">
+							<span class="glyphicon glyphicon-lock">Affiliations: {{affiliation}}</span>
+
+						</div>
+						<div class="row justify-content-center">
+							<span class="glyphicon glyphicon-pencil">Citations : {{citations}}</span>
+
+						</div>
+					</div>
+				</div>
 
 				<div class="profile-userbuttons">
 					<button type="button" onclick="window.location.href='sort_by_date/'" class="btn btn-success btn-sm">sort by date</button>
 				</div>
-				{%for paper in list %}
+				<div>
+					{%for paper in list %}
 					<h3>{{paper}}</h3>
-				{% endfor %}
+					{% endfor %}
+				</div>
             </div>
 		</div>
 	</div>

@@ -35,22 +35,22 @@
               </tr>
             </thead>
             <tbody>
-            {%for id, name, link, pfp, email, affiliation, citations in dataList %}
+            {%for item in dataList %}
                 <tr class="candidates-list">
                 <td class="title">
                   <div class="thumb">
-                    <img class="img-fluid" src={{pfp}} alt="{% static 'css/default_pfp.png' %}">
+                    <img class="img-fluid" src={{item.pfp_link}} alt="Image Not Found">
                   </div>
                   <div class="candidate-list-details">
                     <div class="candidate-list-info">
                       <div class="candidate-list-title">
-                        <h5 id="myBtn" class="mb-0"><a href="/get_profile/{{id}}">{{name}}</a></h5>
+                        <h5 id="myBtn" class="mb-0"><a href="/get_profile/{{item.author_id}}">{{item.author_name}}</a></h5>
                       </div>
                       <div class="candidate-list-option">
                         <ul class="list-unstyled">
-                          <li><i class="fas fa-filter pr-1"></i>{{email}}</li>
-                          <li><i class="fas fa-map-marker-alt pr-1"></i>{{affiliation}}</li>
-                          <li><i class="fas fa-map-marker-alt pr-1"></i>Citations: {{citations}}</li>
+                          <li><i class="fas fa-filter pr-1"></i>{{item.email}}</li>
+                          <li><i class="fas fa-map-marker-alt pr-1"></i>{{item.affiliation}}</li>
+                          <li><i class="fas fa-map-marker-alt pr-1"></i>Citations: {{item.citations}}</li>
                         </ul>
                       </div>
                     </div>
@@ -73,13 +73,7 @@
           </table>
           <div class="text-center mt-3 mt-sm-3">
             <ul class="pagination justify-content-center mb-0">
-              <li class="page-item disabled"> <span class="page-link">Prev</span> </li>
-              <li class="page-item active" aria-current="page"><span class="page-link">1 </span> <span class="sr-only">(current)</span></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">...</a></li>
-              <li class="page-item"><a class="page-link" href="#">25</a></li>
-              <li class="page-item"> <a class="page-link" href="#">Next</a> </li>
+              <li class="page-item"> <a class="page-link" href="next_page/">Next</a> </li>
             </ul>
           </div>
         </div>

@@ -20,8 +20,6 @@ from time import sleep
 from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import NoSuchElementException  
 
-nameList = []
-global_list = []
 authIdForHTML = []
 linksForHTML = []
 namesForHTML = []
@@ -34,20 +32,17 @@ lt_nit = deque([])
 lt_iiit = deque([])
 link_list = []
 list_bool = [True,True,True]
+
 base_url = "https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors="
 sort_by_date = False
 
 options = Options()
-# options.headless = True
+options.headless = True
 browser = webdriver.Firefox(options=options)
-# browser = webdriver.Safari()
 
 # Create your views here.
 def home(request):
     return render(request, 'index.html')
-
-def next_page2(request):
-    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 @csrf_exempt
 def first_page(request):
@@ -181,7 +176,8 @@ def crawler_run(request, searchLink):
     # field = input()
     ID = 0
     # field = request.POST['fieldSearch']
-    global nameList
+    # global browser
+    nameList = []
     web_site = 'https://scholar.google.com/'
     base_url = "https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors="
     to_cut = len(base_url)
@@ -365,14 +361,13 @@ def crawler_run(request, searchLink):
         loop.close()
 
         loop = asyncio.new_event_loop()
-        print("NMAELiST", nameList)
 
         try:
             for page in nameList:
 
                 names.append(loop.create_task(fetch_all_data_name(page)))
 
-            
+
                 loop.run_until_complete(asyncio.wait(names))
 
         except KeyboardInterrupt:
@@ -381,25 +376,18 @@ def crawler_run(request, searchLink):
 
             print("<---Bye--->")
 
-        
-        print("Print ALL PAGES"+url)
-
         loop.close()
     
     # browser.get(searchLink)
-
-    global lt_iit
-    global lt_nit
+    
+    global lt_iit 
+    global lt_nit 
     global lt_iiit
-    
-    lt_iit = deque([])
-    lt_nit = deque([])
-    lt_iiit = deque([])
-    
+
 
     lt_queue = [lt_iit,lt_nit,lt_iiit]
 
-    global global_list
+    global_list = []
 
     # lt_iiit.append("arun")
     # lt_nit.append("manish")
@@ -409,11 +397,13 @@ def crawler_run(request, searchLink):
     link_nit = searchLink + " nit"
     link_iiit = searchLink + " iiit"
 
-
+    global link_list
     link_list= [link_iit, link_nit, link_iiit]
-
-    list_bool = [True,True,True]
-    global browser
+    options = Options()
+    options.headless = True
+    browser = webdriver.Firefox(options=options)
+    global list_bool
+    # global browser
     # options = Options()
     # options.headless = True
     # browser = webdriver.Firefox(options=options)
@@ -421,40 +411,15 @@ def crawler_run(request, searchLink):
 
 
     def parsing(link_index):
-        global namesForHTML
-        global pfpLinksForHTML
-        global emailsForHTML
-        global affiliationsForHTML
-        global citationsForHTML
-        global linksForHTML
-        global nameList
-
-        print("link_list",link_list ,"link_index",link_index)
+        # global browser
         browser.get(link_list[link_index])
         #run scrape code and fill the list by appending list_queue[list_index]
         print_all_pages(link_list[link_index])
-        nameList = []
-        print("here  111111111111111111111")
         dataList = zip(namesForHTML, linksForHTML, pfpLinksForHTML, emailsForHTML, affiliationsForHTML, citationsForHTML)
-        namesForHTML = []
-        linksForHTML = []
-        pfpLinksForHTML = []
-        emailsForHTML = []
-        affiliationsForHTML = []
-        citationsForHTML = []
-        if link_index ==0:
-            # print("hihsaidhasihdihsai", set(dataList))
-            result = deque(dataList)
-            print("iit List" ,lt_iit)
-        if link_index ==1:
-            # print("hihsaidhasihdihsai", set(dataList))
-            result = deque(dataList)
-            print("nit List" ,lt_nit)    
-        if link_index ==2:
-            # print("hihsaidhasihdihsai", set(dataList))
-            result = deque(dataList)
-            print("iiit List" ,lt_iiit)   
-            # def get_list():
+        # print("hihsaidhasihdihsai", set(dataList))
+        lt_queue[link_index] = deque(dataList)
+        print(lt_queue[link_index])
+        # def get_list():
         try:
             if browser.find_element_by_class_name('gs_btnPR'):
                 browser.find_element_by_class_name('gs_btnPR').click()
@@ -463,8 +428,7 @@ def crawler_run(request, searchLink):
             list_bool[link_index] = False
 
         link_list[link_index] = browser.current_url
-        # sleep(3)
-        return result
+
 
 
     #code to fill global_list
@@ -472,62 +436,58 @@ def crawler_run(request, searchLink):
 
     def fill_global_list():
         # print("hiehello",lt_queue)
-
         if len(global_list)>0:
             return global_list
         while len(global_list)<10:
-            print("lt_iit" ,lt_iit , "lt_nit",lt_nit,"lt_iiit",lt_iiit)
-            if len(lt_iit)>0:
 
-                iit = lt_iit.popleft()
-                print("iit...................:",iit )
+            if len(lt_queue[0])>0:
+
+                iit = lt_queue[0].popleft()
+                print("IIT: ",iit)
+
                 global_list.append(iit)
 
-            if len(lt_nit)>0:
-                nit = lt_nit.popleft()
-                print("nit...................:",nit )
+            if len(lt_queue[1])>0:
+                nit = lt_queue[1].popleft()
+                print("NIT: ",nit)
+
                 global_list.append(nit)
 
-            if len(lt_iiit)>0:
-                iiit = lt_iiit.popleft()
-                print("iiit...................:",iiit )
+            if len(lt_queue[2])>0:
+                iiit = lt_queue[2].popleft()
+                print("IIIT: ",iiit)
                 global_list.append(iiit)
 
-            if len(lt_iiit)<=0 and len(lt_iit)<=0 and len(lt_nit)<=0:
+            if len(lt_queue[0])<=0 and len(lt_queue[1])<=0 and len(lt_queue[2])<=0:
                 break
 
-        if len(lt_iiit)<=0:
+        if len(lt_queue[2])<=0:
             if list_bool[2]==True:
-                [lt_iiit.append(item) for item in parsing(2)]
+                parsing(2)
 
-        if len(lt_iit)<=0:
+        if len(lt_queue[0])<=0:
             if list_bool[0]==True:
+                parsing(0)
 
-                [lt_iit.append(item) for item in parsing(0)]
-
-        if len(lt_nit)<=0:
+        if len(lt_queue[1])<=0:
             if list_bool[1]==True:
-                [lt_nit.append(item) for item in parsing(1)]
+                parsing(1)
 
-        print("lt_iit" ,lt_iit , "lt_nit",lt_nit,"lt_iiit",lt_iiit)
-        bool_ = False
-        for a in list_bool:
-            if a == True:
-                bool_ =True
-
-        if bool_==False and  (len(lt_iiit)<=0 and len(lt_nit)<=0 and len(lt_iit)<=0):
-            return None
-        if len(global_list)<=0 :
+        if len(global_list)<=0:
             fill_global_list()
 
-        
+        if True not in list_bool or (len(lt_queue[0])<=0 and len(lt_queue[1])<=0 and len(lt_queue[2])<=0):
+            return None
+
+        else:
+            return global_list
 
 
 
 
     fill_global_list()
 
-    print("helloooooooooooooooooooo",global_list)
+    print("helloooooooooooooooooooo", global_list)
 
 
     # browser.quit()
@@ -557,15 +517,13 @@ def crawler_run(request, searchLink):
 
     return render(request, "results.html", context={'dataList':dataList})
 
-
-
 def next_page(request):
-    # global_list = []
+    global_list = []
     ind=0
     # field = input()
     ID = 0
     # field = request.POST['fieldSearch']
-    global nameList
+    nameList = []
     web_site = 'https://scholar.google.com/'
     base_url = "https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors="
     to_cut = len(base_url)
@@ -749,14 +707,13 @@ def next_page(request):
         loop.close()
 
         loop = asyncio.new_event_loop()
-        print("NMAELiST", nameList)
 
         try:
             for page in nameList:
 
                 names.append(loop.create_task(fetch_all_data_name(page)))
 
-            
+
                 loop.run_until_complete(asyncio.wait(names))
 
         except KeyboardInterrupt:
@@ -765,36 +722,38 @@ def next_page(request):
 
             print("<---Bye--->")
 
-        
-        print("Print ALL PAGES"+url)
-
         loop.close()
     
     # browser.get(searchLink)
-
-    global lt_iit
+    
+    global lt_iit 
     global lt_nit
     global lt_iiit
-    
 
-    global lt_queue
 
-    global global_list
+    lt_queue = [lt_iit,lt_nit,lt_iiit]
+
     global_list = []
+
+    global lt_iit 
+    global lt_nit 
+    global lt_iiit
 
     # lt_iiit.append("arun")
     # lt_nit.append("manish")
     # lt_iit.append("maqsood")
 
-    global link_iit 
-    global link_nit
-    global link_iiit
+    link_iit = searchLink + " iit"
+    link_nit = searchLink + " nit"
+    link_iiit = searchLink + " iiit"
 
 
     global link_list
-
+    options = Options()
+    options.headless = True
+    browser = webdriver.Firefox(options=options)
     global list_bool
-    global browser
+    # global browser
     # options = Options()
     # options.headless = True
     # browser = webdriver.Firefox(options=options)
@@ -802,40 +761,14 @@ def next_page(request):
 
 
     def parsing(link_index):
-        global namesForHTML
-        global pfpLinksForHTML
-        global emailsForHTML
-        global affiliationsForHTML
-        global citationsForHTML
-        global linksForHTML
-        global nameList
-
-        print("link_list",link_list ,"link_index",link_index)
         browser.get(link_list[link_index])
         #run scrape code and fill the list by appending list_queue[list_index]
         print_all_pages(link_list[link_index])
-        nameList = []
-        print("here  111111111111111111111")
         dataList = zip(namesForHTML, linksForHTML, pfpLinksForHTML, emailsForHTML, affiliationsForHTML, citationsForHTML)
-        namesForHTML = []
-        linksForHTML = []
-        pfpLinksForHTML = []
-        emailsForHTML = []
-        affiliationsForHTML = []
-        citationsForHTML = []
-        if link_index ==0:
-            # print("hihsaidhasihdihsai", set(dataList))
-            result = deque(dataList)
-            print("iit List" ,lt_iit)
-        if link_index ==1:
-            # print("hihsaidhasihdihsai", set(dataList))
-            result = deque(dataList)
-            print("nit List" ,lt_nit)    
-        if link_index ==2:
-            # print("hihsaidhasihdihsai", set(dataList))
-            result = deque(dataList)
-            print("iiit List" ,lt_iiit)   
-            # def get_list():
+        # print("hihsaidhasihdihsai", set(dataList))
+        lt_queue[link_index] = deque(dataList)
+        print(lt_queue[link_index])
+        # def get_list():
         try:
             if browser.find_element_by_class_name('gs_btnPR'):
                 browser.find_element_by_class_name('gs_btnPR').click()
@@ -844,8 +777,7 @@ def next_page(request):
             list_bool[link_index] = False
 
         link_list[link_index] = browser.current_url
-        # sleep(3)
-        return result
+
 
 
     #code to fill global_list
@@ -853,62 +785,58 @@ def next_page(request):
 
     def fill_global_list():
         # print("hiehello",lt_queue)
-
         if len(global_list)>0:
             return global_list
         while len(global_list)<10:
-            print("lt_iit" ,lt_iit , "lt_nit",lt_nit,"lt_iiit",lt_iiit)
-            if len(lt_iit)>0:
 
-                iit = lt_iit.popleft()
-                print("iit...................:",iit )
+            if len(lt_queue[0])>0:
+
+                iit = lt_queue[0].popleft()
+                print("IIT: ",iit)
+
                 global_list.append(iit)
 
-            if len(lt_nit)>0:
-                nit = lt_nit.popleft()
-                print("nit...................:",nit )
+            if len(lt_queue[1])>0:
+                nit = lt_queue[1].popleft()
+                print("NIT: ",nit)
+
                 global_list.append(nit)
 
-            if len(lt_iiit)>0:
-                iiit = lt_iiit.popleft()
-                print("iiit...................:",iiit )
+            if len(lt_queue[2])>0:
+                iiit = lt_queue[2].popleft()
+                print("IIIT: ",iiit)
                 global_list.append(iiit)
 
-            if len(lt_iiit)<=0 and len(lt_iit)<=0 and len(lt_nit)<=0:
+            if len(lt_queue[0])<=0 and len(lt_queue[1])<=0 and len(lt_queue[2])<=0:
                 break
 
-        if len(lt_iiit)<=0:
+        if len(lt_queue[2])<=0:
             if list_bool[2]==True:
-                [lt_iiit.append(item) for item in parsing(2)]
+                parsing(2)
 
-        if len(lt_iit)<=0:
+        if len(lt_queue[0])<=0:
             if list_bool[0]==True:
+                parsing(0)
 
-                [lt_iit.append(item) for item in parsing(0)]
-
-        if len(lt_nit)<=0:
+        if len(lt_queue[1])<=0:
             if list_bool[1]==True:
-                [lt_nit.append(item) for item in parsing(1)]
+                parsing(1)
 
-        print("lt_iit" ,lt_iit , "lt_nit",lt_nit,"lt_iiit",lt_iiit)
-        bool_ = False
-        for a in list_bool:
-            if a == True:
-                bool_ =True
-
-        if bool_==False and  (len(lt_iiit)<=0 and len(lt_nit)<=0 and len(lt_iit)<=0):
-            return None
-        if len(global_list)<=0 :
+        if len(global_list)<=0:
             fill_global_list()
 
-        
+        if True not in list_bool or (len(lt_queue[0])<=0 and len(lt_queue[1])<=0 and len(lt_queue[2])<=0):
+            return None
+
+        else:
+            return global_list
 
 
 
 
     fill_global_list()
 
-    print("helloooooooooooooooooooo",global_list)
+    print("helloooooooooooooooooooo", global_list)
 
 
     # browser.quit()
@@ -930,7 +858,7 @@ def next_page(request):
     # authIdForHTML = list(Authors.objects.values_list('author_id', flat=True))
     # authIdForHTML = authIdForHTML[:10][::-1]
     dataList = Authors.objects.all()
-    dataList = dataList[::-1][:10]
+    dataList = dataList[:10][::-1]
     print(dataList)
     
     # dataList = zip(authIdForHTML, namesForHTML, linksForHTML, pfpLinksForHTML, emailsForHTML, affiliationsForHTML, citationsForHTML)
@@ -938,7 +866,7 @@ def next_page(request):
 
     return render(request, "results.html", context={'dataList':dataList})
 
-
+    
 def results(request):
     return render('results.html')
 

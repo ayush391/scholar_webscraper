@@ -5,7 +5,7 @@ class QueryForm(forms.Form):
     query = forms.CharField(label='query',max_length=100)
 
 class Authors(models.Model):
-    author_id = models.IntegerField(primary_key=True)
+    author_id = models.AutoField(primary_key=True)
     author_name = models.CharField(max_length=100)
     link = models.CharField(max_length=1000)
     pfp_link = models.CharField(max_length=1000)
